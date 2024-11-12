@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+<script language="JavaScript">
+    function validphone(phone)
+{
+len=phone.length
+digits="0123456789"
+if(len != 7 && len != 9)
+{alert("Неверное количество знаков в номере")
+document.dataentry.phone.focus()}
+
+for(i=0; i<3; i++)
+{if (digits.indexOf(phone.charAt(i))<0)
+{alert("Это должны быть цифры")
+document.dataentry.phone.focus()
+break}
+}
+
+}
+    </script>
+<form id="form1" runat="server">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+            
+
+            body {
+                margin: 0;
+                display: block;
+                background: url('4.jpg') no-repeat fixed center;
+                height: auto;
+                width: 100%;
+                background-size: cover;
+                top: 0px;
+                left: 0px;
+				margin-right: 0%;
+				border-right: 0px;
+				
+				padding-right: 0%;
+				
+            }
+
+            .golova {
+                margin: 0;
+                position: relative;
+                display: block;
+                top: 0;
+                left: -100px;
+                background: rgba(182, 77, 197, 0.50);
+                width: 110%;
+				height: 50%;
+                            margin-right: 0%;
+				border-right: 0px;
+				
+				padding-right: 0%;   
+            }
+
+            .submenu {
+                margin: 0;
+                list-style: none;
+                padding: 0;
+            }
+
+                .submenu.hidden {
+                    display: none;
+                }
+
+            .menu {
+                position: absolute;
+                top: 150px;
+                left: 200px;
+                height: 171px;
+                width: 272px;
+                margin-right: 39px;
+                list-style-type: none;
+                text-decoration: none;
+            }
+
+            .nov {
+                position: relative;
+                border-bottom: medium dashed #e6e6e6;
+                top: 200px;
+                left: 253px;
+                width: 200px;
+                height: 250px;
+                float: left;
+                margin-bottom: 0px;
+                margin-right: 0px;
+                font-family: 'Oswald', sans-serif;
+                background: #fff;
+                padding: 10px 0 0 10px;
+                font-weight: bold;
+                color: #f00;
+                box-shadow: 5px 4px 5px rgba(92, 91, 91, 0.68);
+            }
+
+            .nov2 {
+                position: relative;
+                display: block;
+                top: 3px;
+                left: 0px;
+                height: 272px;
+                width: 200px;
+                float: left;
+                background-size: contain;
+                background-size: 50px;
+            }
+           
+            .slova {
+                text-align: center;
+                position: absolute;
+                top: 150px;
+                left: 546px;
+                height: 571px; 
+                width: auto;
+                float: right;
+                font-family: 'Oswald', sans-serif;
+                padding-right: 200px;
+                color: #fff;
+                            }
+           
+            .footer {position: absolute;
+                     border-top: 2px solid #f00;
+                    top: 207%;
+                     height: 30%;
+				width: 100%;
+            background: #fff;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            ruby-align: center;
+            vertical-align: central;
+            padding: 40px;
+				margin-right: 0%;
+				border-right: 0px;
+				
+				padding-right: 0%;
+            }
+
+            .div1 {width: 50%;
+                     left: -20%;
+				margin-right: 0%;
+				border-right: 0px;
+				
+				padding-right: 0%;
+                    
+            }
+			.nomera{
+				position: absolute;
+				left: 60%;
+				top: 15%;
+				color:#FFF;
+			}
+            div2 form{
+                align-content: center
+            }
+                footer div h2 {font-size: 30px;
+                               color: #fff;
+                               top: 1000px;
+                }
+                footer div p {font-size: 20px;
+                               color: #F00;
+                }
+        </style>
+        <script>
+        function initExpand() {
+            function fn(ul) {
+                var parent = ul.parentNode;
+                var h4 = parent.querySelector("h4");
+                h4.onclick = function () {
+                    ul.classList.toggle("hidden")
+                };
+                ul.classList.add("hidden")
+            }
+            Array.prototype.forEach.call(document.querySelectorAll(".mainmenu .submenu"), fn)
+        }
+        window.onload = initExpand;
+        </script>
+
+        <title>Вредоносное ПО</title>
+    </head>
+    <body>
+
+        <div class="golova">
+            <h1 style="width: 50%; text-align: center; font-family: 'Oswald', sans-serif; margin: 20px auto 20px; color: #fff;
+            font-size: 50px;"><img src="logo.png" style="height: 100px; margin-right: 5%; width: 116px;">Всё о вредоносном ПО</h1>
+        </div>
+        <div class="menu">
+            <div class="wrapper">
+                <header> 
+                    <nav>
+                        <ul class="mainmenu">
+                                <h4 class="expandera"><a style="background: #fff; border-radius: 5px; box-shadow: 0px 1px 3px; font-size: 20px; padding:10px; text-decoration: none; font-family: 'Oswald', sans-serif; margin-left:70px; href="#">Меню</a></h4>
+                                <ul class="submenu" style="text-decoration: none; background-color: rgba(255, 255, 255, 0.72); width: 221px; padding: 5.5px">
+                                    <li><a href="glav.html" style="color: #000; text-decoration: none;">Главная</a></li>
+                                    <li><a name="PO"></a><a href="о вирусах.html" style="color: #000; text-decoration: none;">Классификация вирусного ПО</a></li>
+                                    <li><a href="we.html" style="color: #000; text-decoration: none;">О нас</a></li>
+                                </ul>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="nov"><a href="https://www.kaspersky.ru/total-security?campaign=kl-ru_yadirectps-1_acq_ona_sem_bra_onl_b2c_ya_link_______&redef=1&THRU&referer1=kl-ru_yadirectps-1&referer2=kl-ru_yadirectps-1_acq_ona_sem_bra_onl_b2c_ya_link_______&ksid=4be35eec-3418-4bb1-8ff2-3bd5d3953c26&ksprof_id=426&ksaffcode=cr8744818153&ksdevice=desktop&kschadid=8744818153&kschname=yandex&kpid=Yandex%7C11212284%7C536241868%7C8744818153%7Ckwd-9370641620%7Cdesktop&yclid=3586937757517765890">Ваша лицензия на "Лаборатория Касперского Internet Security Multi-Device" истекает? Успейте приобрести! Низкая цена!
+        <div class="nov2"><img src="123.png" style="height: 100px; width: 200px;"></a></div></div>
+        <div class="slova">
+            <p><big><I>Вирус.</I></big> Если просто, то это самовоспроизводящийся программный код, который внедряется в установленные программы без согласия пользователя. Вирусы можно разделить по типу объектов, которые они заражают, по методам заражения и выбора жертв. Вирусы можно подцепить разными способами: от нажатия вредоносной ссылки или файла в неизвестном письме до заражения на вредоносном сайте. При этом вирус может выполнять множество разных задач, направленных в первую очередь на принесение вреда операционной системе. В настоящее время вирусы довольно редки, так как создатели вредоносов стараются держать свои программы и их распространение под контролем. В противном случае вирус довольно быстро попадает в руки антивирусных компаний.<br></p></a>
+
+<p><I><big>Червь.</I></big> Черви являются в некотором роде вирусами, так как созданы на основе саморазмножающихся программ. Однако черви не могут заражать существующие файлы. Вместо этого червь поселяется в компьютер отдельным файлом и ищет уязвимости в Сети или системе для дальнейшего распространения себя. Черви также могут подразделяться по способу заражения (электронная почта, мессенджеры, обмен файлами и пр.). Некоторые черви существуют в виде сохраненных на жестком диске файлов, а некоторые поселяются лишь в оперативной памяти компьютера.<br></p></a>
+
+<p><I><big>Троян.</I></big> По своему действию является противоположностью вирусам и червям. Его предлагают загрузить под видом законного приложения, однако вместо заявленной функциональности он делает то, что нужно злоумышленникам. Троянцы получили свое название от одноименного печально известного мифологического коня, так как под видом какой-либо полезной программы или утилиты в систему проникает деструктивный элемент. Трояны не самовоспроизводятся и не распространяются сами по себе. Однако с увеличением вала информации и файлов в Интернете трояна стало довольно легко подцепить. Нынешние трояны эволюционировали до таких сложных форм, как, например, бэкдор (троян, пытающийся взять на себя администрирование компьютера) и троян-загрузчик (устанавливает на компьютер жертвы вредоносный код). <br></p>
+
+<p><I><big>Руткит.</I></big> В современном мире руткит представляет собой особую часть вредоносных программ, разработанных специально, чтобы скрыть присутствие вредоносного кода и его действия от пользователя и установленного защитного программного обеспечения. Это возможно благодаря тесной интеграции руткита с операционной системой. А некоторые руткиты могут начать свою работу прежде, чем загрузится операционная система. Таких называют буткитами. Однако, как бы ни развивался этот тип вредоносов, сложные современные антивирусные программы в состоянии обнаружить и обезвредить практически все существующие разновидности руткитов. <br></p>
+
+<p><I><big>Бэкдор.</I></big> (средство удаленного администрирования). Бэкдор, или RAT (remote administration tool), — это приложение, которое позволяет честному системному администратору или злобному злоумышленнику управлять вашим компьютером на расстоянии. В зависимости от функциональных особенностей конкрентного бэкдора, хакер может установить и запустить на компьютере жертвы любое программное обеспечение, сохранять все нажатия клавиш, загружать и сохранять любые файлы, включать микрофон или камеру. Словом, брать на себя контроль за компьютером и информацией жертвы.<br></p>
+
+<p><I><big>Загрузчик.</I></big> Эта зараза является небольшой частью кода, используемой для дальнейшей загрузки и установки полной версии вредоноса. После того как загрузчик попадает в систему путем сохранения вложения электронного письма или, например, при просмотре зараженной картинки, он соединяется с удаленным сервером и загружает весь вредонос.<br></p>
+
+<p>Для начала знакомства с разновидностями вредоносных программ вполне достаточно. Зная врага в лицо, уже легче находиться в безопасности и использовать правильные методы защиты от него. Единственное, в чем надо убедиться, так это в том, что вы используете правильное защитное ПО.</p>
+        </div>
+        <div class="footer" style="background-image: url('3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; left: -1px; margin-right: 0%; padding-right: 0%;">
+            <footer>
+                <div class="div1"><h2>Проблема с компьютером? <br>Доставьте его в один из наших сервисов и вам обязательно помогут!</h2>
+                     </div>
+									<div class="nomera"><h2>Наши контакты:</h2>
+									<h3>г.Москва, ул. Комсомольская, дом 5.</h3>
+									<h3>Телефон горячей линии: +7(980)-536-99-46</h3></a>
+									</div></a>
+             </footer></div>
+    </body>
+</html>
+</form>
