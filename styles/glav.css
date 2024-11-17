@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    display: block;
+    background: url('../images/4.jpg') no-repeat fixed center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    margin-right: 0%;
+    border-right: 0px;
+    padding-right: 0%; 
+}
+
+.golova {
+    margin: 0;
+    position: relative;
+    display: block;
+    top: 0;
+    left: -100px;
+    background: rgba(182, 77, 197, 0.50);
+    width: 110%;
+    height: 50%;
+    margin-right: 0%;
+    border-right: 0px;
+    padding-right: 0%;   
+}
+
+.submenu {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none; 
+    background-color: rgba(255, 255, 255, 0.72); 
+    width: 221px; 
+    padding: 5.5px;
+}
+
+.submenu.hidden {
+    display: none;
+}
+.submenu:has(li) {
+    color: #000; 
+    text-decoration: none;
+}
+
+.kasper__img {
+    height: 100px; 
+    width: 200px;
+}
+.menu {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    height: 171px;
+    width: 272px;
+    margin-right: 39px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nov {
+    position: relative;
+    border-bottom: medium dashed #e6e6e6;
+    top: 272px;
+    left: 253px;
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-family: 'Oswald', sans-serif;
+    background: #fff;
+    padding: 10px 0 0 10px;
+    font-weight: bold;
+    color: #f00;
+    box-shadow: 5px 4px 5px rgba(92, 91, 91, 0.68);
+}
+
+.main-title {
+    width: 50%; 
+    text-align: center; 
+    font-family: 'Oswald', sans-serif; 
+    margin: 20px auto 20px; 
+    color: #fff;
+    font-size: 50px;
+}
+
+.main-title .logo {
+    height: 100px; 
+    margin-right: 5%; 
+    width: 116px;
+}
+
+.main__table {
+    width: 468px; 
+    position: relative; 
+    top: 0px; 
+    left: 212px; 
+    height: 143px; 
+    border-bottom: 2px solid rgba(220, 214, 103, 0.81);
+    margin-right: 0%;
+	border-right: 0px;			
+	padding-right: 0%;
+}
+
+.nov2 {
+    position: relative;
+    display: block;
+    top: 3px;
+    left: 0px;
+    height: 272px;
+    width: 200px;
+    float: left;
+    background-size: contain;
+    background-size: 50px;
+}
+
+.expandera__link {
+    background: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0px 1px 3px; 
+    font-size: 20px; 
+    padding:10px; 
+    text-decoration: none; 
+    font-family: 'Oswald', 
+    sans-serif; margin-left:70px; 
+}
+
+.main__text {
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 546px;
+    height: 571px; 
+    width: auto;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    padding-right: 200px;
+    color: #fff;
+}
+
+.top_anti-virus {
+    margin-right: 0%;
+	border-right: 0px;
+	padding-right: 0%;
+}
+
+.footer {
+    position: absolute;
+    border-top: 2px solid #f00;
+    top: 150%;
+    height: 30%;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    ruby-align: center;
+    vertical-align: central;
+    padding: 40px;
+    margin-right: 0%;
+    border-right: 0px;
+    padding-right: 0%;
+}
+
+.service {
+    width: 50%;
+    left: -20%;
+    margin-right: 0%;
+    border-right: 0px;
+    padding-right: 0%;
+        
+}
+
+.nomera{
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    color:#FFF;
+}
+
+div2 form {
+    align-content: center
+}
+
+footer div h2 {
+    font-size: 30px;
+    color: #fff;
+    top: 1000px;
+    }
+footer div p {
+    font-size: 20px;
+    color: #F00;
+}
+
+.footer {
+    background-image: url('../images/3.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    left: -1px; 
+    margin-right: 0%; 
+    padding-right: 0%;
+}
