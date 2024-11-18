@@ -17,8 +17,6 @@ body {
     display: flex;
     gap: 3%;
     background: rgba(182, 77, 197, 0.50);
-    width: 110%;
-    height: 50%;
     margin-right: 0%;
     border-right: 0px;
     padding-right: 0%;
@@ -28,6 +26,14 @@ body {
 
 .logo {
     width: 7%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .submenu {
@@ -53,24 +59,16 @@ body {
     width: 200px;
 }
 .menu {
-    position: absolute;
-    top: 150px;
-    left: 200px;
     height: 171px;
     width: 272px;
-    margin-right: 39px;
     list-style-type: none;
     text-decoration: none;
 }
 
 .nov {
-    position: relative;
     border-bottom: medium dashed #e6e6e6;
-    top: 272px;
-    left: 253px;
     width: 200px;
-    height: 250px;
-    float: left;
+    height: 65%;
     margin-bottom: 0px;
     margin-right: 0px;
     font-family: 'Oswald', sans-serif;
@@ -79,6 +77,8 @@ body {
     font-weight: bold;
     color: #f00;
     box-shadow: 5px 4px 5px rgba(92, 91, 91, 0.68);
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 .main-title {
@@ -124,16 +124,11 @@ body {
     font-size: 20px; 
     padding:10px; 
     text-decoration: none; 
-    font-family: 'Oswald', 
-    sans-serif; margin-left:70px; 
+    font-family: 'Oswald', sans-serif;
 }
 
 .main__text {
     text-align: left;
-    position: absolute;
-    top: 30%;
-    left: 546px;
-    height: 571px; 
     width: auto;
     float: right;
     font-family: 'Oswald', sans-serif;
@@ -146,7 +141,6 @@ body {
 	border-right: 0px;
 	padding-right: 0%;
 }
-
 .footer {
     position: absolute;
     border-top: 2px solid #f00;
@@ -181,15 +175,12 @@ body {
     color:#FFF;
 }
 
-div2 form {
-    align-content: center
-}
-
 footer div h2 {
     font-size: 30px;
     color: #fff;
     top: 1000px;
-    }
+}
+
 footer div p {
     font-size: 20px;
     color: #F00;
